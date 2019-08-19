@@ -1,7 +1,7 @@
 Desktop screen creation design :
 ✔ content creation ( html css ) @started(19-08-18 21:11) @done(19-08-19 01:26) @lasted(4h15m45s)
-    [] search onfocus event to display filter menu @started(19-08-19 15:23)
-    [] filter menu logic 
+    ✔ search onfocus event to display filter menu @started(19-08-19 15:23) @done(19-08-19 15:48) @lasted(25m35s)
+    ✘ filter menu logic (retrieve data and filters ) @cancelled(19-08-19 15:49)
     ✘ singUp module @cancelled(19-08-19 09:19)
     ✘ singIn module @cancelled(19-08-19 09:19)
     ✔ logo 's content make it dynamic @started(19-08-19 09:19) @done(19-08-19 09:23) @lasted(4m46s)

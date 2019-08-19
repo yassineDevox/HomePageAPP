@@ -9,7 +9,7 @@ Desktop screen creation design :
     [] still have a prob with displaying left side men and search field @started(19-08-19 12:03)
 
 Mobile Screen Design Creation :
-    [] content creation (html css)
+    ✔ content creation (html css) @done(19-08-19 13:24)
     ✔ Display the left side menu when clicking on menuIcon @started(19-08-19 01:27) @done(19-08-19 01:27) @lasted(46s)
     ✔ Display the search input field when clicking on searchIcon @started(19-08-19 01:27) @done(19-08-19 01:27) @lasted(49s)        
     #ask zouhaire about the searchs filter logic in mb case ?

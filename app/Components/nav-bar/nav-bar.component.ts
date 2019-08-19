@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { STATUS } from '../../../mocks/status';
 import { LEVELS } from '../../../mocks/levels';
+import { BLOCKS } from '../../../mocks/blocks';
 
 @Component({
   selector: 'app-nav-bar',
@@ -13,8 +14,11 @@ export class NavBarComponent implements OnInit {
   listLevels = LEVELS;
   showFilter:boolean=false;
 
+  blocks=Array(BLOCKS,BLOCKS,BLOCKS);
   
-  constructor() { }
+  constructor() { 
+    //console.log(this.blocks);
+  }
 
   ngOnInit() {
   }

@@ -1,191 +1,224 @@
-
-
 <div id="responsive-wrapper-main" data-qa="main">
-<div id="responsive-wrapper-sub">
+    <div id="responsive-wrapper-sub">
 
-<header role="banner" data-qa="header">
-<nav id="eyebrow" role="navigation">
-<div class="container">
-<div class="row">
-    <div class="csol-xs-12">
-    <button type="button" id="toggle-sidenav" class="visible-xs visible-sm"
-    (click)="onClickMenu()">
-    <i aria-hidden="true"></i>
-    <span class="sr-only">Toggle Navigation</span></button>
-    <div class="headnav-logo">
-<a
-id="nav-logo"
-rel="home"
-href="#"
-class="ga"
-data-ga-persona=""
-data-ga-category="header"
-data-ga-action="click"
-data-ga-label="lynda.com-logo"
-data-ga-type="link_click"
-data-qa="header_logo"
-itemscope=""
-itemtype="http://schema.org/Organization"
-itemprop="url">
-<i
-class="lyndacon lynda-linkedin-logo ldc-logo"
-itemprop="logo"
-aria-hidden="true"></i>
-<span class="sr-only">Lynda.com from LinkedIn</span>
-</a>
-</div>
-<div id="submenu-left">
-<ul>
-<li
-id="submenu-library"
-class="flat-menu submenu-toggle-cont popover-trigger"
-data-submenu="library-menu">
+        <header role="banner" data-qa="header">
+            <nav id="eyebrow" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="csol-xs-12">
+                            <button
+                                type="button"
+                                id="toggle-sidenav"
+                                class="visible-xs visible-sm"
+                                (click)="onClickMenu()">
+                                <i aria-hidden="true"></i>
+                                <span class="sr-only">Toggle Navigation</span>
+                            </button>
+                            <div class="headnav-logo">
+                                <a
+                                    id="nav-logo"
+                                    rel="home"
+                                    href="#"
+                                    class="ga"
+                                    data-ga-persona=""
+                                    data-ga-category="header"
+                                    data-ga-action="click"
+                                    data-ga-label="lynda.com-logo"
+                                    data-ga-type="link_click"
+                                    data-qa="header_logo"
+                                    itemscope=""
+                                    itemtype="http://schema.org/Organization"
+                                    itemprop="url">
+                                    <i
+                                        class="lyndacon lynda-linkedin-logo ldc-logo"
+                                        itemprop="logo"
+                                        aria-hidden="true"></i>
+                                    <span class="sr-only">Lynda.com from LinkedIn</span>
+                                </a>
+                            </div>
+                            <div id="submenu-left">
+                                <ul>
+                                    <li
+                                        id="submenu-library"
+                                        class="flat-menu submenu-toggle-cont popover-trigger"
+                                        data-submenu="library-menu">
 
-<a
-id="browse-subjects"
-href="#"
-aria-hidden="true"
-tabindex="-1"
-class="ga"
-data-ga-persona=""
-data-ga-category="header"
-data-ga-action="click"
-data-ga-label="library"
-data-qa="header_subject_menu">All Subjects</a>
-<div
-id="library-menu"
-[class.show] = "showFilter"
-class="popover">
-<div id="main-subject-list" class="hide">Explore Lynda.com's library of categories, topics, software and learning paths.</div>
-<ul id="subject-sub-menu" class="popover-menu has-paths">
-<div class="css-table menu-table">
-<div class="arrow hide"></div>
-<div class="menu-items">
-<div class="css-table-row">
+                                        <a
+                                            id="browse-subjects"
+                                            href="#"
+                                            aria-hidden="true"
+                                            tabindex="-1"
+                                            class="ga"
+                                            data-ga-persona=""
+                                            data-ga-category="header"
+                                            data-ga-action="click"
+                                            data-ga-label="library"
+                                            data-qa="header_subject_menu">All Subjects</a>
+                                        <div id="library-menu" [class.show]="showFilter" class="popover">
+                                            <div id="main-subject-list" class="hide">Explore Lynda.com's library of categories, topics, software and learning paths.</div>
+                                            <ul id="subject-sub-menu" class="popover-menu has-paths">
+                                                <div class="css-table menu-table">
+                                                    <div class="arrow hide"></div>
+                                                    <div class="menu-items">
+                                                        <div class="css-table-row">
 
-<div
-role="tabpanel"
-id="details-1"
-aria-labelledby="tab-1"
-class="css-table-cell subject-details active"
-aria-hidden="false">
-<div class="container-fluid">
-<div class="row">
-<div class="col-xs-6">
-<h5>
-<span class="sr-only">3D + Animation</span>Etats</h5>
-<ul>
-    <li *ngFor="let state of listStatus">
+                                                            <div
+                                                                role="tabpanel"
+                                                                id="details-1"
+                                                                aria-labelledby="tab-1"
+                                                                class="css-table-cell subject-details active"
+                                                                aria-hidden="false">
+                                                                <div class="container-fluid">
+                                                                    <div class="row">
+                                                                        <div class="col-xs-6">
+                                                                            <h5>
+                                                                                <span class="sr-only">3D + Animation</span>Etats</h5>
+                                                                            <ul>
+                                                                                <li *ngFor="let state of listStatus">
 
-        <a href="#" class=" level">
-        <input type="radio" name="state">
-        <span>{{state.name}}</span>
-        </a>
-    </li>
-</ul>
+                                                                                    <a href="#" class=" level">
+                                                                                        <input type="radio" name="state">
+                                                                                            <span>{{state.name}}</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
 
-</div>
-<div class="col-xs-6">
-<h5>
-<span class="sr-only">3D + Animation</span>Niveaux</h5>
-<ul>
-<li *ngFor="let level of listLevels">
+                                                                            </div>
+                                                                            <div class="col-xs-6">
+                                                                                <h5>
+                                                                                    <span class="sr-only">3D + Animation</span>Niveaux</h5>
+                                                                                <ul>
+                                                                                    <li *ngFor="let level of listLevels">
 
-<a href="#" class="level">
-<input type="radio" name="level">
-<span>{{level.name}}</span>
-</a>
-</li>
-</ul>
+                                                                                        <a href="#" class="level">
+                                                                                            <input type="radio" name="level">
+                                                                                                <span>{{level.name}}</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
 
-</div>
+                                                                                </div>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</ul>
-</div>
-</li>
-</ul>
-<form
-id="submenu-search"
-[class.showField]="showSearchField" 
-action="https://www.lynda.com/search"
->
-<div class="form-group">
-<label for="header-search-field" class="sr-only">Search</label>
-<input
-(focus)="onFIN()"
-(focusout)="onFOUT()"
-id="header-search-field"
-placeholder="Search for the software or skills you want to learn">
-<button
-class="clear-search lyndacon close-x collapse"
-type="reset"
-title="Clear search">
-<span class="sr-only">Clear Search</span></button>
-</div>
-<button
-type="submit"
-id="site-search-submit"
-class="lyndacon search hidden-xs hidden-sm"
-data-qa="header_search_cta"
-title="Search">
-<span class="sr-only">Search</span></button>
-<div
-id="autocomplete-results"
-class="autocomplete-results-cont autocomplete-dark-theme"
-style="left: auto; width: 485px; max-height: 632px; display: none;">
-<div class="container-fluid">
-<div class="grouped-result row" data-qa="qa_searchResults">
-<ul id="header-search-results" class="autocomplete-results" role="listbox"></ul>
-</div>
-</div>
-<div id="no-results-container" class="hidden-message no-results-found">No suggestions found.</div>
-<div id="one-result-container" class="hidden-message">One suggestion found. Use up and down keys to navigate.</div>
-<div id="many-results-container" class="hidden-message">Multiple suggestions found. Use up and down keys to navigate.</div>
-</div>
-</form>
-<ul id="submenu-login" class="submenu-login">
-<li class="redirect-links-cont">
-<a
-href="https://www.lynda.com/signin"
-class="top-menu-item redirect-links ga"
-data-ga-persona=""
-data-ga-category="header"
-data-ga-action="click"
-data-ga-label="sign-in:sign-in"
-data-ga-type="link_click"
-data-qa="eyebrow_log_in_cta">Sign In</a>
-</li>
-<li class="redirect-links-cont hidden-xs hidden-sm">
-<a
-href="https://www.linkedin.com/learning/subscription/lynda?upselltrk=lynda_learning_upsell&amp;trk=lynda_direct_learning"
-class="am-link tracking top-menu-item top-menu-item-primary ga"
-data-track-event="cta-click"
-data-track-button="signup-header"
-data-ga-category="header"
-data-ga-action="signup-cta-click"
-data-ga-label="sign-up"
-data-ga-type="cta_click"
-data-qa="eyebrow_signup_cta">Sign Up</a>
-</li>
-</ul>
-</div>
-<button type="button" id="toggle-search" (click)="toggleSearch()">
-<i class="lyndacon search" aria-hidden="true"></i>
-<span class="sr-only">Toggle search bar</span></button>
-</div>
-</div>
-</div>
-</nav>
-</header>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <form
+                                            id="submenu-search"
+                                            [class.showField]="showSearchField"
+                                            action="https://www.lynda.com/search">
+                                            <div class="form-group">
+                                                <label for="header-search-field" class="sr-only">Search</label>
+                                                <input
+                                                    (focus)="onFIN()"
+                                                    (focusout)="onFOUT()"
+                                                    id="header-search-field"
+                                                    placeholder="Search for the software or skills you want to learn">
+                                                    <button
+                                                        class="clear-search lyndacon close-x collapse"
+                                                        type="reset"
+                                                        title="Clear search">
+                                                        <span class="sr-only">Clear Search</span>
+                                                    </button>
+                                                </div>
+                                                <button
+                                                    type="submit"
+                                                    id="site-search-submit"
+                                                    class="lyndacon search hidden-xs hidden-sm"
+                                                    data-qa="header_search_cta"
+                                                    title="Search">
+                                                    <span class="sr-only">Search</span>
+                                                </button>
+                                                <div
+                                                    id="autocomplete-results"
+                                                    class="autocomplete-results-cont autocomplete-dark-theme"
+                                                    style="left: auto; width: 485px; max-height: 632px; display: none;">
+                                                    <div class="container-fluid">
+                                                        <div class="grouped-result row" data-qa="qa_searchResults">
+                                                            <ul id="header-search-results" class="autocomplete-results" role="listbox"></ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="no-results-container" class="hidden-message no-results-found">No suggestions found.</div>
+                                                    <div id="one-result-container" class="hidden-message">One suggestion found. Use up and down keys to navigate.</div>
+                                                    <div id="many-results-container" class="hidden-message">Multiple suggestions found. Use up and down keys to navigate.</div>
+                                                </div>
+                                            </form>
+                                            <ul id="submenu-login" class="submenu-login">
+                                                <li class="redirect-links-cont">
+                                                    <a
+                                                        href="https://www.lynda.com/signin"
+                                                        class="top-menu-item redirect-links ga"
+                                                        data-ga-persona=""
+                                                        data-ga-category="header"
+                                                        data-ga-action="click"
+                                                        data-ga-label="sign-in:sign-in"
+                                                        data-ga-type="link_click"
+                                                        data-qa="eyebrow_log_in_cta">Sign In</a>
+                                                </li>
+                                                <li class="redirect-links-cont hidden-xs hidden-sm">
+                                                    <a
+                                                        href="https://www.linkedin.com/learning/subscription/lynda?upselltrk=lynda_learning_upsell&amp;trk=lynda_direct_learning"
+                                                        class="am-link tracking top-menu-item top-menu-item-primary ga"
+                                                        data-track-event="cta-click"
+                                                        data-track-button="signup-header"
+                                                        data-ga-category="header"
+                                                        data-ga-action="signup-cta-click"
+                                                        data-ga-label="sign-up"
+                                                        data-ga-type="cta_click"
+                                                        data-qa="eyebrow_signup_cta">Sign Up</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" id="toggle-search" (click)="toggleSearch()">
+                                            <i class="lyndacon search" aria-hidden="true"></i>
+                                            <span class="sr-only">Toggle search bar</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+        </nav>
+        </header>
+        <div id="skip-navigation"></div>
+        <!--Blocks starts --->
+        <div id="home-page" role="main" class="lazy-bg-container page-main" data-tracking-category="nmhp-page">
+            <section class="container section-with-space text-center lp-tiles lazy-bg-container">
+                <div>
+                    <div class="row">
+                        <header class="col-md-12 col-xs-12">
+                            <h2 class="section-header">Stay Sharp. Get ahead with Learning Paths.</h2>
+                        </header>
+                        <ng-container *ngFor="let i of [0,1,2]">
+                            <div *ngFor="let b of blocks[i]" class="col-md-4 col-sm-6 col-xs-12">
+                                <article class="tile">
+                                    <a class="tile-text" [href]="b.imgURL" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(&quot;https://cdn.lynda.com/static/images/non-member/learning-paths/marketer.jpg&quot;);">
+                                        <div class="path-info">
+                                            <h3 class="topic-name">{{b.topicName}}</h3>
+                                            <p class="topic-heading"><strong>{{b.topicTitle}}</strong>{{b.nbHours}}  hours</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>                        
+                        </ng-container>
 
+                        
+                        <footer class="col-xs-12 text-center">
+                            <a href="/learning-paths" class="learning-paths-cta ga" data-ga-action="click" data-ga-label="paths-all" data-qa="link-paths-all">Browse All Learning Paths <i class="lyndacon caret-grey right"></i></a>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+        
+            
+            
+        
+            
+        </div>
+    </div>
 </div>
-</div>
-
-<div id="cover-wrapper"></div>  
-
+<div id="cover-wrapper"></div>

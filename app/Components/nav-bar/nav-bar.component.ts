@@ -19,8 +19,14 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickMenu() :void {
-  this.showSearchField = !this.showSearchField; 
+  // onClickMenu() :void {
+  //   this.showSearchField = !this.showSearchField; 
+  //   console.log(this.showSearchField);
+  // }
+  
+  toggleSearch() :void {
+    this.showSearchField = !this.showSearchField; 
+    console.log(this.showSearchField);
   }
 
 }

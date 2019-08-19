@@ -113,34 +113,14 @@ aria-hidden="false">
 </ul>
 <form
 id="submenu-search"
-[class]="showSearchField==false ? 'navbar-form':'navbar-form show-field'" 
+[class.showField]="showSearchField" 
 action="https://www.lynda.com/search"
-method="get"
-name="topsrch">
-<div id="live-region" aria-live="polite" class="sr-only"></div>
+>
 <div class="form-group">
 <label for="header-search-field" class="sr-only">Search</label>
 <input
 id="header-search-field"
-class="autocomplete"
-type="search"
-role="combobox"
-aria-autocomplete="list"
-aria-owns="header-search-results"
-aria-expanded="false"
-aria-activedescendant=""
-name="q"
-placeholder="Search for the software or skills you want to learn"
-data-limit="7"
-data-highlight-strategy="replace"
-data-results-container="#autocomplete-results"
-data-no-results-container="#no-results-container"
-data-one-result-container="#one-result-container"
-data-many-results-container="#many-results-container"
-data-loading-icon-container="#site-search-submit"
-data-url-template="/ajax/search/termAutocomplete?q=<%= val %>&amp;limit=<%= limit %>"
-data-qa="header_search_field"
-autocomplete="off">
+placeholder="Search for the software or skills you want to learn">
 <button
 class="clear-search lyndacon close-x collapse"
 type="reset"
@@ -194,7 +174,7 @@ data-qa="eyebrow_signup_cta">Sign Up</a>
 </li>
 </ul>
 </div>
-<button type="button" id="toggle-search">
+<button type="button" id="toggle-search" (click)="toggleSearch()">
 <i class="lyndacon search" aria-hidden="true"></i>
 <span class="sr-only">Toggle search bar</span></button>
 </div>

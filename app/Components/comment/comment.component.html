@@ -1,0 +1,19 @@
+<div class="feedback-usr">
+  <div class="user visible-lg-block visible-md-block">
+      <img class="thumbail"
+            [src]="comment.thumbailURL"/>
+      <a >{{getItByGender()}} Jewbi</a>
+  </div>
+  <div class="comment-usr">
+    <h4>{{comment.title}}</h4>
+    <p>{{comment.desc}}</p>
+    <span class="usr-comment-name">
+          {{comment.name}}    
+    </span>
+    <ul class="usr-stars">
+      <li *ngFor="let i of getCommentStars() | fill" class="y-star"></li>
+        <li *ngFor="let i of nbEmptyStars | fill" class="e-star"></li>
+    </ul>
+  </div>
+  
+</div>

@@ -1,0 +1,25 @@
+@today @critical Implementing the Carousel Component :
+    ✔ create a comment interface @started(19-08-06 16:23) @done(19-08-06 17:05) @lasted(42m47s)
+    ✔ use the comment interface in the commentComponent @started(19-08-06 17:05) @done(19-08-06 17:12) @lasted(7m48s)
+    ✔ create a list of comments in the app Components @started(19-08-06 17:15) @critica @done(19-08-06 18:01) @lasted(46m22s)
+    ✔ display a comments list in app component @started(19-08-06 18:02) @done(19-08-06 18:05) @lasted(3m55s)
+    @high implementing the carousel with pagination component with the list of comments Components :
+            ✔ implementing the pagination carousel with the commentComponent @started(19-08-06 18:09) @done(19-08-06 18:35) @lasted(26m45s)
+            ✔ add the awnsome-font-css to the index file @started(19-08-06 19:00) @done(19-08-06 19:13) @lasted(13m24s)
+            ✘ creating a carousel component @started(19-08-06 18:59) @cancelled(19-08-06 19:00) @wasted(1m8s)
+            ✔ creating a carousel component @started(19-08-06 19:13) @done(19-08-06 20:58) @lasted(1h45m39s)
+            ✔ creating a carouselItem Directive and assign it to the commentComponent using(templateRef) @started(19-08-06 20:59) @done(19-08-06 21:07) @lasted(8m32s)
+            define the width of the carouselWrapper bise in the first commentComponentEl:
+            ✔ create a directive to target listOfelements (cssSelector)  @started(19-08-06 21:20) @done(19-08-07 15:33) @lasted(18h13m55s)
+            ✔ define the width of the carousel-wrapper dynamicaly @started(19-08-07 15:35) @done(19-08-07 17:54) @lasted(2h19m6s)
+            implement the logic of the animation's slide :
+                ✔ understand how its gona work @started(19-08-07 18:09) @done(19-08-07 19:17) @lasted(1h8m26s)
+                    implementing the pagination ctrl:
+                        ✘ inplementing it in the carouselComponent @started(19-08-07 20:07) @cancelled(19-08-07 21:19) @wasted(1h12m45s)
+                        ✘ implementing the animateFactory to the carousel @started(19-08-07 20:02) @cancelled(19-08-07 21:19) @wasted(1h17m47s)
+                        ✔ fix design erros @started(19-08-07 21:20) @done(19-08-07 21:46) @lasted(26m27s)
+                        ✔ add the gender field to the comment model @started(19-08-08 01:18) @done(19-08-08 01:31) @lasted(13m27s)
+                        ✔ implementing the carousel's animations @started(19-08-08 12:20) @done(19-08-08 20:21) @lasted(8h1m56s)
+                        
+responsive css layouts design : 
+    ✔ learn about flex and float and grid @started(19-08-11 17:20) @done(19-08-11 18:28) @lasted(1h8m46s)

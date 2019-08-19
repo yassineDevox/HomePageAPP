@@ -1,0 +1,28 @@
+div#library-menu {
+    display: block;
+}
+h5{    font-family: proxima-nova,"Helvetica Neue",Helvetica,sans-serif;
+}
+.level span {
+    padding-left:3px; 
+    position: relative;
+    top: -2px;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+}
+.level input:checked ~ span {
+    color: #ffb900;
+}
+
+li:hover {
+    color: #ffb900;
+}
+
+// img{
+//     border: 0;
+//     width: 20%;
+//     height: 30px;
+//     border: 1px dotted white;
+// }
+// .headnav-logo{top:10px}

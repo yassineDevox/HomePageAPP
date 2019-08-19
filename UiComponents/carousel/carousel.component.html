@@ -1,0 +1,16 @@
+<div class="wrapper-carousel-container" >
+    <!--ng stye to get the css from a js object -->
+    <section class="wrapper-carousel" [ngStyle]="wrapperCarouselStyle">
+      <ul  class="carousel-inner"  #carousel><!--#carousel ref for animation -->
+        <li *ngFor="let tmplItem of Items;" class="mcarousel-item">
+          <ng-container [ngTemplateOutlet]="tmplItem.tpl"></ng-container><!--to ref the itemTemplate-->
+        </li>
+      </ul> 
+      </section>
+     
+    <div class="btn-ctrl-group">
+      <span [class.addBack]="btn[0]" (click)="onShow(s0)"  id="0" #s0></span>
+      <span [class.addBack]="btn[1]" (click)="onShow(s1)" id="1" #s1></span>
+      <span [class.addBack]="btn[2]" (click)="onShow(s2)" id="2" #s2></span>
+    </div>
+  </div>

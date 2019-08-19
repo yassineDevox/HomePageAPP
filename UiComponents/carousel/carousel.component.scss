@@ -1,0 +1,39 @@
+*{box-sizing:unset!important}
+.addBack{background-color:gray!important}
+
+.wrapper-carousel-container{
+    position: absolute;
+    height:300px;
+    margin:10px auto;
+  }
+  .wrapper-carousel{overflow: hidden;}
+  
+  .btn-ctrl-group{
+    position: absolute;
+    margin: 0 auto;
+    width: 70px;
+    height: 15px;
+    bottom: 0;
+    left: 270px;
+    padding: 0.1em;
+    box-sizing: none;
+  }
+  .btn-ctrl-group span{
+    display:block;
+    border-radius:50%;
+    background-color:rgba(128, 128, 128, 0.336);;
+    margin-left:0.5em;
+    float:left;
+    height:12px;
+    width:12px;
+    cursor:pointer;
+    transition:0.3s all;
+  }
+  
+  .carousel-inner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 6000px;
+    display: flex;
+  }

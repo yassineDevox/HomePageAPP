@@ -1,0 +1,132 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+body{
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857;
+  color: rgb(0, 0, 0);
+}
+@media (min-width:992px) and (max-width:1200px){
+  .container {
+    width: 1121px !important;
+  }
+}
+@media (min-width: 1200px){
+  .container {
+    width: 1550px !important;
+  }
+  .col-lg-3 {
+    width: 20% !important;
+  }}
+@media (min-width: 992px){
+  .col-md-3 {
+    width: 19% !important;
+  }}
+
+@media (max-width:991px) and (min-width: 768px){
+  .container{
+    width:970px !important;
+  }
+  .col-sm-6 {
+    width: 41% !important;
+  }
+  .my-col:nth-last-of-type(-n+2){
+    margin-top:27px;
+  }
+}
+@media (max-width:767px){
+  .my-col{
+    width:80% !important;
+  }
+  .my-col:nth-last-of-type(-n+3){
+    margin-top:27px;
+  }
+}
+.container{
+  padding-left:0px !important;
+}
+.title{
+  text-align: center;
+}
+.section-header {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.my-row{
+  margin-top:14px;
+}
+.my-container{
+}
+.my-col{
+  height:360px;
+  margin-left:55px;
+  margin-bottom:13px;
+}
+.my-col > div{
+  border-radius: 8px;
+}
+.article1{
+  width:105%;
+  height:48%;
+}
+.article2{
+  width:105%;
+  height:48%;
+  margin-top:27px;
+}
+.img{
+  background-size: 115% 115% !important;
+  height:100%;
+  display: table;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  transition-duration: 0.35s;
+  border-radius: 8px;
+  text-decoration: none;
+  background-position: 50% 50% !important;
+  width:100%;
+  transition: .5s all;
+}
+.img:hover{
+  text-decoration: none;
+  background-size: 140% 140% !important;
+  color:white;
+  outline: 0px;
+}
+.img:hover .info p{
+  visibility: visible;
+  opacity: 1;
+  margin-top: 7px;
+  height: 25px;
+  text-shadow: 0 0 13px #000;
+  font-weight: 300;
+}
+.info{
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.info:hover{
+  text-decoration: none;
+  color:white;
+}
+.sousTitle{
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -26px;
+  transition-duration: .25s;
+}
+.title1{
+  font-size: 17px;
+  line-height: 19px;
+  text-shadow: 0 0 13px rgba(0,0,0,.55);
+  font-weight: 700;
+}
+.info strong{
+  font-weight: 700;
+}

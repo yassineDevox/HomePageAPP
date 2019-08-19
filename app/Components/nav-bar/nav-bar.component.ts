@@ -24,10 +24,19 @@ export class NavBarComponent implements OnInit {
   }
 
   onFIN(){ 
-    console.log('in');
     this.showFilter=true;
  }
   
-  onFOUT(){ this.showFilter=false; }
+ handleChangeLevel(level){
+  console.log(level);
+ }
 
+ handleChangeState(state){
+  console.log(state);
+ }
+
+  onfOutFilter(){
+    this.showFilter=false;
+
+  }
 }

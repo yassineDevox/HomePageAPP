@@ -11,7 +11,7 @@ export class NavBarComponent implements OnInit {
 
   listStatus = STATUS;
   listLevels = LEVELS;
-  showSearchField:boolean=false;
+  showFilter:boolean=false;
 
   
   constructor() { }
@@ -19,14 +19,11 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
-  // onClickMenu() :void {
-  //   this.showSearchField = !this.showSearchField; 
-  //   console.log(this.showSearchField);
-  // }
+  onFIN(){ 
+    console.log('in');
+    this.showFilter=true;
+ }
   
-  toggleSearch() :void {
-    this.showSearchField = !this.showSearchField; 
-    console.log(this.showSearchField);
-  }
+  onFOUT(){ this.showFilter=false; }
 
 }

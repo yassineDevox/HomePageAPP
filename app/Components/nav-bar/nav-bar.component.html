@@ -54,9 +54,8 @@ data-ga-label="library"
 data-qa="header_subject_menu">All Subjects</a>
 <div
 id="library-menu"
-class="popover"
-data-original-title=""
-style="display:block">
+[class.show] = "showFilter"
+class="popover">
 <div id="main-subject-list" class="hide">Explore Lynda.com's library of categories, topics, software and learning paths.</div>
 <ul id="subject-sub-menu" class="popover-menu has-paths">
 <div class="css-table menu-table">
@@ -119,6 +118,8 @@ action="https://www.lynda.com/search"
 <div class="form-group">
 <label for="header-search-field" class="sr-only">Search</label>
 <input
+(focus)="onFIN()"
+(focusout)="onFOUT()"
 id="header-search-field"
 placeholder="Search for the software or skills you want to learn">
 <button
